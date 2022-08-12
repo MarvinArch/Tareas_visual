@@ -1,11 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
-const API_BASE = 'http://resttareas.herokuapp.com/';
+const API_BASE = 'https://resttareas.herokuapp.com/';
 @Injectable({
   providedIn: 'root'
 })
-export class AppService {
+export class AppService{
 
   constructor(private http: HttpClient ) { }
 
