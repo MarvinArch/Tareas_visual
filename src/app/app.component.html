@@ -59,7 +59,7 @@
         </div>
         <div class="collapse" id="alp{{tarea1.id}}">
           <div class="card card-body">
-            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            {{tarea1.description}}
           </div>
         </div>
       </div>
@@ -76,14 +76,19 @@
 
         <div class="mb-3 form-floating">
           <input type="date" id="dateDelivery"  name="dateDelivery" class="form-control" [(ngModel)]="tareaMod.dateDelivery" >
-          <label for="dateDelivery"> Nombre de Tarea</label>
+          <label for="dateDelivery">Fecha de Entrega</label>
+        </div>
+
+        <div class="mb-3 form-floating">
+          <textarea class="form-control" name="description" id="description" rows="3" cols="54" [(ngModel)]="tareaMod.description"></textarea> 
+          
         </div>
 
         <div class="mb-3 form-check" >
-          <input id="complete" type="checkbox"  class="form-check-input"  name="complete" [(ngModel)]="tareaMod.complete  ">
+          <input id="complete" type="checkbox"  class="form-check-input"  name="complete" [(ngModel)]="tareaMod.complete">
           <label for="complete" class="form-check-label">Completado</label>
         </div>
-
+        
         <div>
           <button class="btn btn-primary btn.lg">Guardar</button>
         </div>

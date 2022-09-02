@@ -14,7 +14,8 @@ export class AppComponent {
     id: null,
     name: "",
     complete: false,    
-    dateDelivery: undefined
+    dateDelivery: undefined,
+    description: "Descripción"
   }
 
   constructor (private appService: AppService){}
@@ -40,7 +41,8 @@ export class AppComponent {
       id: null,
     name: "",
     complete: false,
-    dateDelivery: undefined
+    dateDelivery: undefined,
+    description: "Descripción"
     }
   }
 
